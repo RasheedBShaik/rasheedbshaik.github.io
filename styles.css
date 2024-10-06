@@ -68,6 +68,9 @@ header {
     font-weight: bold;
     font-size: 60px;
   }
+  .abtme {
+    padding-left: 10px;
+  }
 }
 @media (min-width: 800px) {
   .rasheed {
