@@ -3,6 +3,37 @@
   margin: 0;
   box-sizing: border-box;
 }
+.view_live {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+.vl > a:hover {
+  transition: 1s;
+  background-color: green;
+  color: white;
+  border: 1px solid;
+}
+.last_submit {
+  display: flex;
+  justify-content: center;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  max-width: 197px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10.5px 21.5px;
+  margin-bottom: 68px;
+}
+.last_submit:hover {
+  border: 3px solid;
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
