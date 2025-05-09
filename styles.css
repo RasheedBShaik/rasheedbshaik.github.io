@@ -44,7 +44,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 0%;
+  scroll-padding-top: 55px;
 }
 header {
   width: 100%;
