@@ -553,18 +553,27 @@
           type="text"
           name="name"
           placeholder="ENTER YOUR NAME*"
+          autocomplete="name"
           required />
+
         <input
           type="email"
           name="email"
           placeholder="ENTER YOUR EMAIL*"
+          autocomplete="email"
           required />
-        <input type="tel" name="phone" placeholder="PHONE NUMBER" />
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="PHONE NUMBER"
+          autocomplete="tel" />
+
         <textarea
-          id="aaaa"
           name="message"
           placeholder="YOUR MESSAGE"
           rows="5"
+          autocomplete="off"
           required></textarea>
 
         <button type="submit" class="last_submit">SUBMIT</button>
