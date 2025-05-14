@@ -31,6 +31,20 @@ body {
   background-color: black;
   color: white;
 }
+@media (max-width: 360px) {
+  .scandvl {
+    align-items: center;
+  }
+  .sc,
+  .vl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: normal;
+    height: fit-content;
+  }
+}
 .vl > a:hover {
   background-color: white;
   transition: 1s;
@@ -387,7 +401,6 @@ header {
 .scandvl {
   padding-top: 15px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 input,
