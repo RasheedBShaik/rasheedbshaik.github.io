@@ -391,6 +391,7 @@
       <form
         action="https://formspree.io/f/xanegjqz"
         method="POST"
+        autocomplete="off"
         style="
           margin: 0 auto;
           width: 100%;
@@ -403,26 +404,30 @@
         ">
         <input
           type="text"
-          name="name"
+          name="user_name"
+          autocomplete="off"
           placeholder="ENTER YOUR NAME*"
           autocomplete="name"
           required />
 
         <input
           type="email"
-          name="email"
+          autocomplete="off"
+          name="user_email"
           placeholder="ENTER YOUR EMAIL*"
           autocomplete="email"
           required />
 
         <input
           type="tel"
+          autocomplete="off"
           name="phone"
           placeholder="PHONE NUMBER"
           autocomplete="tel" />
 
         <textarea
           name="message"
+          autocomplete="off"
           placeholder="YOUR MESSAGE"
           rows="5"
           autocomplete="off"

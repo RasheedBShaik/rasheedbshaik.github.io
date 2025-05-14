@@ -40,25 +40,30 @@ body {
 .last_submit {
   display: flex;
   justify-content: center;
-  border-bottom: none;
-  border-top: none;
-  border-left: 3px solid;
-  border-right: 3px solid;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid white;
+  border-right: 3px solid transparent;
+  border-left: 3px solid white;
   width: 100%;
   max-width: 197px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #00000050;
+  color: white;
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
   padding: 10.5px 21.5px;
   margin-bottom: 68px;
 }
-.last_submit:hover {
-  background-color: #00ffff;
-  color: #0c192c;
+
+.last_submit:active {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid white;
+  border-left: 3px solid transparent;
+  border-right: 3px solid white;
   border-radius: 5px;
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 55px;
