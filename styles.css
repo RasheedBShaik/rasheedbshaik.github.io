@@ -86,7 +86,6 @@ header {
   width: 100%;
   background-color: #0c192c;
   display: flex;
-  justify-content: end;
   z-index: 1;
 }
 @media (min-width: 100px) {
@@ -101,7 +100,6 @@ header {
 @media (min-width: 600px) {
   .locations {
     margin-right: 65px;
-    margin: 10 auto;
     flex-direction: row;
   }
 }
@@ -126,6 +124,14 @@ header {
 @media (max-width: 600px) {
   .hamburger {
     display: flex;
+  }
+  .mylogo img.rotate {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  header {
+    justify-content: space-between;
   }
   .nav:hover {
     background-color: #4fc3dc;
@@ -185,7 +191,6 @@ header {
   display: flex;
   justify-content: space-around;
 }
-/* } */
 .bubbles span {
   position: relative;
   width: 30px;
@@ -287,13 +292,6 @@ header {
     visibility: hidden;
   }
 }
-/* @media (min-width: 1050px) {
-  .right {
-    visibility: visible;
-    display: block;
-    width: 100%;
-  }
-} */
 .nav {
   padding: 17px 30px;
 }
@@ -436,9 +434,23 @@ textarea {
   outline: none;
   margin-bottom: 20px;
 }
+input:hover,
+textarea:hover {
+  border-top: 5px solid #00ffff;
+  border-right: 5px solid #00ffff;
+}
 input::placeholder,
 textarea::placeholder {
   color: white;
   font-size: 14px;
   font-weight: bold;
+}
+.logo {
+  height: 55px;
+  width: 65px;
+  margin-left: 40px;
+}
+.mylogo img.rotate {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
 }
