@@ -230,7 +230,6 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #0c192c;
-    height: 100vh;
     min-width: 100%;
   }
   .bubbles span {
@@ -261,9 +260,7 @@ header {
 }
 @media (min-width: 300px) {
   .rasheed {
-    margin: 0 auto;
     color: #00ffff;
-    margin-left: 14px;
     font-weight: bold;
     font-size: 60px;
   }
@@ -272,7 +269,6 @@ header {
   .rasheed {
     font-size: 150px;
     position: relative;
-    left: -100px;
   }
 }
 .left {
@@ -291,14 +287,13 @@ header {
     visibility: hidden;
   }
 }
-@media (min-width: 1050px) {
+/* @media (min-width: 1050px) {
   .right {
     visibility: visible;
-
     display: block;
     width: 100%;
   }
-}
+} */
 .nav {
   padding: 17px 30px;
 }
@@ -336,7 +331,7 @@ header {
     max-width: 762px;
     gap: 75px;
     margin: 0 auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .navContent {
     font-size: 18px;
@@ -375,6 +370,25 @@ header {
     grid-template-columns: 1fr;
     gap: 10px;
     margin: 10px;
+  }
+  /* Start with sections scaled down */
+  section {
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+
+  /* When .visible class added, run animation */
+  section.visible {
+    animation: scaleIn 2s ease forwards;
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 @media (min-width: 800px) {
