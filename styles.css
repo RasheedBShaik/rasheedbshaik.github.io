@@ -396,7 +396,7 @@ header {
 }
 @media (min-width: 1400px) {
   .project_card_container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .project_card {
@@ -453,4 +453,14 @@ textarea::placeholder {
 .mylogo img.rotate {
   transform: rotate(360deg);
   transition: transform 0.5s ease-in-out;
+}
+.project-image {
+  border-radius: 10px;
+  aspect-ratio: 2/1;
+  width: 100%;
+  margin: 0 auto;
+  transition: transform 1s ease;
+}
+.project-image:hover {
+  transform: scale(1.15); /* Zoom in */
 }
