@@ -489,17 +489,26 @@ textarea::placeholder {
   padding-bottom: 69px;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 250px) {
   .socialmedia {
-    flex-direction: row;
+    flex-direction: column;
+    display: flex;
+    padding-left: 10px;
+    gap: 31px;
+    width: fit-content;
+    color: transparent;
   }
   .footer {
     font-size: 20px;
   }
 }
-@media (min-width: 800px) {
+
+@media (min-width: 750px) {
   .post {
     font-size: 50px;
+  }
+  .socialmedia {
+    flex-direction: row;
   }
 
   .footer {
@@ -508,12 +517,4 @@ textarea::placeholder {
 }
 .mydetails {
   padding-left: 50px;
-}
-.socialmedia {
-  display: flex;
-  padding-left: 10px;
-  gap: 31px;
-  width: fit-content;
-  flex-direction: column;
-  color: transparent;
 }
