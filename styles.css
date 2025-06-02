@@ -478,13 +478,32 @@ textarea::placeholder {
   font-weight: bold;
   font-size: 25px;
   color: #a066ff;
-  /* margin-left: 14px; */
   margin-right: 14px;
   margin-bottom: 136px;
+}
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  width: fit-content;
+  padding-bottom: 69px;
+}
+
+@media (min-width: 370px) {
+  .socialmedia {
+    flex-direction: row;
+  }
+  .footer {
+    font-size: 20px;
+  }
 }
 @media (min-width: 800px) {
   .post {
     font-size: 50px;
+  }
+
+  .footer {
+    font-size: 28px;
   }
 }
 .mydetails {
@@ -497,9 +516,4 @@ textarea::placeholder {
   width: fit-content;
   flex-direction: column;
   color: transparent;
-}
-@media (min-width: 370px) {
-  .socialmedia {
-    flex-direction: row;
-  }
 }
