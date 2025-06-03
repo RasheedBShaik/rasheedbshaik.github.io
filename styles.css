@@ -491,7 +491,6 @@ textarea::placeholder {
 
 @media (min-width: 250px) {
   .socialmedia {
-    flex-direction: column;
     display: flex;
     padding-left: 10px;
     gap: 31px;
@@ -499,7 +498,7 @@ textarea::placeholder {
     color: transparent;
   }
   .footer {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -507,10 +506,6 @@ textarea::placeholder {
   .post {
     font-size: 50px;
   }
-  .socialmedia {
-    flex-direction: row;
-  }
-
   .footer {
     font-size: 28px;
   }
