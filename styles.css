@@ -8,11 +8,12 @@ body {
   color: #00ffff;
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
 }
 
 .view_live {
@@ -284,7 +285,6 @@ header {
     font-size: 100px;
     position: relative;
   }
-  
 }
 
 @media (min-width: 1200px) {
@@ -293,14 +293,13 @@ header {
     position: relative;
   }
 }
-.left {
+/* .left {
   width: 100%;
-}
+} */
 @media (min-width: 800px) {
   .intro {
-    margin-top: 72px;
-    margin-left: 270px;
-    margin-bottom: 240px;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 @media (min-width: 300px) {
@@ -481,14 +480,14 @@ textarea::placeholder {
   transition: transform 1s ease;
 }
 .project-image:hover {
-  transform: scale(1.10); /* Zoom in */
+  transform: scale(1.1); /* Zoom in */
 }
 .post {
   font-weight: bold;
   font-size: 25px;
   color: #a066ff;
-  margin-right: 14px;
-  margin-bottom: 136px;
+  /* margin-right: 14px; */
+  margin-bottom: 20px;
 }
 .footer {
   margin: 0 auto;
@@ -513,7 +512,6 @@ textarea::placeholder {
 @media (min-width: 375px) {
   .socialmedia {
     padding-left: 50px;
-
   }
 }
 @media (min-width: 750px) {
@@ -535,7 +533,6 @@ textarea::placeholder {
   padding: 10px 0;
 }
 
-
 .skillBadge {
   display: inline-block;
   padding: 4px 10px;
@@ -544,7 +541,7 @@ textarea::placeholder {
   font-weight: 600;
   color: white;
   margin: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
